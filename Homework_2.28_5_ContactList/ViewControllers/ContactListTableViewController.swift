@@ -14,7 +14,6 @@ class ContactListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(contacts)
     }
 
     // MARK: - Table view data source
@@ -22,10 +21,10 @@ class ContactListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         contacts.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
-
+        
         let contact = contacts[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
@@ -41,8 +40,8 @@ class ContactListTableViewController: UITableViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailedInformationVC = segue.destination as? DetailedInformationViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
         
-        detailedInformationVC.contacts = contacts
-        
+        detailedInformationVC.contact = contacts[indexPath.row]
     }
 }

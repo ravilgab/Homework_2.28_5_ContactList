@@ -91,12 +91,6 @@ struct Contact {
 
 extension Contact {
     static func getContacts() -> [Contact] {
-//        [
-//            Contact(name: "Ravil", surname: "Gabitov", phoneNumber: "89999999999", emailAddress: "ravil@email.com"),
-//            Contact(name: "Julia", surname: "Filina", phoneNumber: "89179179179", emailAddress: "julia@email.com"),
-//            Contact(name: "Dmitriy", surname: "Kergilov", phoneNumber: "89649649649", emailAddress: "dimon@email.com")
-//        ]
-//
         var contacts: [Contact] = []
         
         let names = names.shuffled()
