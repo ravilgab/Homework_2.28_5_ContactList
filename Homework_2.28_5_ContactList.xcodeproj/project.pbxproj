@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		F1C1029F2930946900F3E87D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C1029E2930946900F3E87D /* AppDelegate.swift */; };
 		F1C102A12930946900F3E87D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C102A02930946900F3E87D /* SceneDelegate.swift */; };
-		F1C102A32930946900F3E87D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C102A22930946900F3E87D /* ViewController.swift */; };
 		F1C102A62930946900F3E87D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C102A42930946900F3E87D /* Main.storyboard */; };
 		F1C102A82930946B00F3E87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C102A72930946B00F3E87D /* Assets.xcassets */; };
 		F1C102AB2930946B00F3E87D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C102A92930946B00F3E87D /* LaunchScreen.storyboard */; };
+		F1C102B7293095DD00F3E87D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C102B6293095DD00F3E87D /* Contact.swift */; };
+		F1C102BA293096F700F3E87D /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C102B9293096F700F3E87D /* ContactListTableViewController.swift */; };
+		F1C102BC2930E66A00F3E87D /* DetailedInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C102BB2930E66A00F3E87D /* DetailedInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1C1029B2930946900F3E87D /* Homework_2.28_5_ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework_2.28_5_ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C1029E2930946900F3E87D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1C102A02930946900F3E87D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F1C102A22930946900F3E87D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1C102A52930946900F3E87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1C102A72930946B00F3E87D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1C102AA2930946B00F3E87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1C102AC2930946B00F3E87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1C102B6293095DD00F3E87D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		F1C102B9293096F700F3E87D /* ContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
+		F1C102BB2930E66A00F3E87D /* DetailedInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		F1C1029D2930946900F3E87D /* Homework_2.28_5_ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				F1C1029E2930946900F3E87D /* AppDelegate.swift */,
-				F1C102A02930946900F3E87D /* SceneDelegate.swift */,
-				F1C102A22930946900F3E87D /* ViewController.swift */,
-				F1C102A42930946900F3E87D /* Main.storyboard */,
-				F1C102A72930946B00F3E87D /* Assets.xcassets */,
-				F1C102A92930946B00F3E87D /* LaunchScreen.storyboard */,
-				F1C102AC2930946B00F3E87D /* Info.plist */,
+				F1C102B52930954000F3E87D /* ViewControllers */,
+				F1C102B32930952500F3E87D /* Storyboards */,
+				F1C102B8293095E100F3E87D /* Models */,
+				F1C102B42930953400F3E87D /* Resources */,
+				F1C102B22930951B00F3E87D /* App */,
 			);
 			path = Homework_2.28_5_ContactList;
+			sourceTree = "<group>";
+		};
+		F1C102B22930951B00F3E87D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F1C1029E2930946900F3E87D /* AppDelegate.swift */,
+				F1C102A02930946900F3E87D /* SceneDelegate.swift */,
+				F1C102AC2930946B00F3E87D /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F1C102B32930952500F3E87D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F1C102A42930946900F3E87D /* Main.storyboard */,
+				F1C102A92930946B00F3E87D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F1C102B42930953400F3E87D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1C102A72930946B00F3E87D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F1C102B52930954000F3E87D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1C102B9293096F700F3E87D /* ContactListTableViewController.swift */,
+				F1C102BB2930E66A00F3E87D /* DetailedInformationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F1C102B8293095E100F3E87D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1C102B6293095DD00F3E87D /* Contact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C102A32930946900F3E87D /* ViewController.swift in Sources */,
+				F1C102B7293095DD00F3E87D /* Contact.swift in Sources */,
 				F1C1029F2930946900F3E87D /* AppDelegate.swift in Sources */,
+				F1C102BA293096F700F3E87D /* ContactListTableViewController.swift in Sources */,
+				F1C102BC2930E66A00F3E87D /* DetailedInformationViewController.swift in Sources */,
 				F1C102A12930946900F3E87D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RR2792TYH2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Homework_2.28_5_ContactList/Info.plist;
+				INFOPLIST_FILE = Homework_2.28_5_ContactList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RR2792TYH2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Homework_2.28_5_ContactList/Info.plist;
+				INFOPLIST_FILE = Homework_2.28_5_ContactList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
